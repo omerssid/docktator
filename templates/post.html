@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="my-lg">
+    <h2 class="my-xl">{% block title %} {{ post['title'] }} {% endblock %}</h2>
+    <hr/>
+    <span class="badge badge-primary">{{ post['created'] }}</span>
+    <p>{{ post['content'] }}</p>
+</div>
+{% endblock %}
