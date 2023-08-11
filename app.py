@@ -30,3 +30,7 @@ def main():
 def post(post_id):
     post = get_post(post_id)
     return render_template('post.html', post=post)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
